@@ -1,0 +1,8 @@
+.nav-container {
+  padding: 0.2rem 1rem;
+  display: flex;
+  align-items: center;
+}
+.nav-container .nav-title h1 {
+  font-family: "Lobster", cursive;
+}
