@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import './home.scss';
 import { DragDropContext, Droppable } from 'react-beautiful-dnd';
+import List from '../../components/list/List';
 import sample from '../../utils/sample';
+import InputContainer from '../../components/inputcontainer/InputContainer';
 
 const Home = () => {
-  const [lists, setLists] = useState([sample.lists]);
+  const [lists, setLists] = useState(sample.lists);
 
   return (
     <div className='home-container'>
@@ -13,8 +15,11 @@ const Home = () => {
           {(provided) => (
             <div className='home-wrapper' ref={provided.innerRef}>
               {lists.map((list, index) => {
-                return;
+                return <List list={list} key={list.id} index={index} />;
               })}
+              <div>
+                <InputContainer type='list' />
+              </div>
               {provided.placeholder}
             </div>
           )}

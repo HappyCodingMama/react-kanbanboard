@@ -1,0 +1,54 @@
+.input-card-container {
+  background-color: var(--color-bg);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 5px;
+}
+.input-card-container .input-card-wrapper {
+  width: 100%;
+  margin: auto;
+}
+.input-card-container .input-card-wrapper .input-text {
+  width: 100%;
+  height: 4rem;
+  padding: 0.6rem 1rem;
+  background-color: transparent;
+  border: 1px solid var(--color-grey);
+  font-size: 1rem;
+  resize: none;
+}
+.input-card-container .confirm {
+  width: 268px;
+  margin: 0.2rem auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.input-card-container .confirm .button-confirm {
+  padding: 0 1rem;
+  border-radius: 6px;
+  height: 2rem;
+  background-color: var(--color-grey);
+  color: var(--color-black);
+  transition: 0.3s background-color;
+}
+.input-card-container .confirm .button-confirm:hover {
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+.input-card-container .confirm .button-cancel {
+  padding: 0.4rem 0.5rem;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid white;
+  color: black;
+  font-size: 1.1rem;
+  transition: 0.2s all ease-in;
+}
+.input-card-container .confirm .button-cancel:hover {
+  background-color: black;
+  color: white;
+}
