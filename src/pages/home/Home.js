@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import './home.scss';
 import { DragDropContext, Droppable } from 'react-beautiful-dnd';
 import List from '../../components/list/List';
-import sample from '../../utils/sample';
+import data from '../../utils/sample';
 import InputContainer from '../../components/inputcontainer/InputContainer';
 
 const Home = () => {
-  const [lists, setLists] = useState(sample.lists);
+  const [lists, setLists] = useState(data.lists);
 
   return (
     <div className='home-container'>

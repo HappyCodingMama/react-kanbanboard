@@ -1,0 +1,19 @@
+.input-container {
+  width: 100%;
+  max-width: 300px;
+  margin-right: 0.5rem;
+  .openButton {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    padding: 0.5rem;
+    font-size: 14px;
+  }
+  .input-content {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    padding: 0.5rem 0;
+    opacity: 0.8;
+  }
+}

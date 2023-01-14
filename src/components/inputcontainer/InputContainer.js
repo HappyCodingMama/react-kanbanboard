@@ -7,8 +7,8 @@ const InputContainer = ({ listId, type }) => {
 
   return (
     <div className='input-container'>
-      <button onClick={() => setOpen(!open)}>
-        {type === 'card' ? '+ Add Card' : 'Add List'}
+      <button className='openButton' onClick={() => setOpen(!open)}>
+        {type === 'card' ? '+ Add Card' : '+ Add List'}
       </button>
       {open && (
         <div className='input-content'>

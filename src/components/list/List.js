@@ -1,5 +1,6 @@
 import React from 'react';
 import { Draggable, Droppable } from 'react-beautiful-dnd';
+import Card from '../card/Card';
 import InputContainer from '../inputcontainer/InputContainer';
 import './list.scss';
 
@@ -19,7 +20,12 @@ const List = ({ list, index }) => {
                     className='card-container'
                   >
                     {list.cards.map((card, index) => (
-                      <h1>card</h1>
+                      <Card
+                        key={card.id}
+                        card={card}
+                        index={index}
+                        listId={list.id}
+                      />
                     ))}
                     {provided.placeholder}
                   </div>
